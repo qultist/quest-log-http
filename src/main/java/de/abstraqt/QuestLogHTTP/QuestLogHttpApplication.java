@@ -9,5 +9,4 @@ public class QuestLogHttpApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(QuestLogHttpApplication.class, args);
 	}
-
 }
