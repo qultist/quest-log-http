@@ -1,10 +1,10 @@
 package de.abstraqt.QuestLogHTTP;
 
 import com.fasterxml.jackson.annotation.JsonInclude;
+import com.fasterxml.jackson.annotation.JsonTypeInfo;
 
-import static com.fasterxml.jackson.annotation.JsonInclude.Include.NON_NULL;
-
-@JsonInclude(NON_NULL)
+@JsonTypeInfo(use = JsonTypeInfo.Id.NONE)
+@JsonInclude(JsonInclude.Include.NON_NULL)
 public class Quest {
 
     private Long id;
