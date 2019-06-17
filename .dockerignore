@@ -111,3 +111,8 @@ fabric.properties
 
 # Custom
 !target/*.jar
+# Dockerfile (breaks dockerfile-maven plugin)
+.gitignore
+.dockerignore
+README.md
+skaffold.yaml
