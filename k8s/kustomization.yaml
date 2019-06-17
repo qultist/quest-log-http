@@ -1,0 +1,12 @@
+resources:
+  - deployment.yml
+  - service.yml
+#patchesJson6902:
+#  - target:
+#      group: apps
+#      version: v1
+#      kind: Deployment
+#      name: http-service
+#    path: deployment_patch.json
+patchesStrategicMerge:
+  - increase_cpu.yml

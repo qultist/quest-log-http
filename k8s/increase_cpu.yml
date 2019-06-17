@@ -1,0 +1,15 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: http-service
+spec:
+  template:
+    metadata:
+      labels:
+        app: http-service
+    spec:
+      containers:
+        - name: http-service
+          resources:
+            limits:
+              cpu: 300m

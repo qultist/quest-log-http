@@ -1,0 +1,10 @@
+apiVersion: skaffold/v1beta11
+kind: Config
+build:
+  artifacts:
+    - image: qultist/ql-http-service
+      context: .
+      jibMaven: {}
+deploy:
+  kustomize:
+    path: k8s

@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: http-service
+spec:
+  selector:
+    matchLabels:
+      app: http-service
+  template:
+    metadata:
+      labels:
+        app: http-service
+    spec:
+      containers:
+        - name: http-service
+          image: qultist/ql-http-service
+          resources:
+            limits:
+              cpu: 100m
