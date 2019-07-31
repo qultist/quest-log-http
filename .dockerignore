@@ -116,3 +116,4 @@ fabric.properties
 .dockerignore
 README.md
 skaffold.yaml
+test
